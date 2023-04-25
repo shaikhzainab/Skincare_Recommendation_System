@@ -18,7 +18,7 @@ import pickle
 
 df = pd.read_csv('apps/skindataall.csv', index_col=[0])
 
-with open('mf_model.pkl', 'rb') as f:
+with open('apps/mf_model.pkl', 'rb') as f:
     mf_model = pickle.load(f)
 
 
