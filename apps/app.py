@@ -16,7 +16,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 import pickle
 
-df = pd.read_csv('skindataall.csv', index_col=[0])
+df = pd.read_csv('apps/skindataall.csv', index_col=[0])
 
 with open('mf_model.pkl', 'rb') as f:
     mf_model = pickle.load(f)
